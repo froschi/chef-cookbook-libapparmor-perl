@@ -1,3 +1,7 @@
+include_recipe "libapparmor"
+include_recipe "perl"
+include_recipe "perl-base"
+
 packages = Array.new
 
 case node[:lsb][:codename]
